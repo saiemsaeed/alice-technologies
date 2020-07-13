@@ -1,0 +1,21 @@
+<form name="contact" netlify netlify-honeypot="bot-field" hidden>
+  <input type="text" name="first-name" required />
+  <input type="text" name="last-name" />
+  <input type="email" name="email" required />
+  <input type="tel" name="phone" required />
+  <input type="text" name="company" required />
+  <select name="role" required>
+    <option value="" selected="selected">
+      -- What is your role? --
+    </option>
+    <option value="Contractor">Contractor </option>
+    <option value="Real estate owner">Real estate owner </option>
+    <option value="Design firm">Design firm </option>
+    <option value="Student">Student </option>
+    <option value="Press or media">Press or media </option>
+    <option value="Job applicant">Job applicant </option>
+    <option value="Investor">Investor </option>
+    <option value="Other">Other </option>
+  </select>
+  <textarea name="message" required></textarea>
+</form>

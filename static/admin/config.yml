@@ -1,0 +1,23 @@
+backend:
+  name: git-gateway
+
+media_folder: static/assets/uploads
+public_folder: /assets/uploads
+
+collections:
+  - name: "careers"
+    label: "Careers"
+    folder: "src/pages/careers"
+    create: true
+    editor:
+      preview: false
+    fields:
+      - {label: "Template", name: "template", widget: "hidden", default: "career"}
+      - {label: "Title", name: "title", widget: "string", required: true}
+      - {label: "Category", name: "category", widget: "string", required: false}
+      - {label: "Location", name: "location", widget: "string", required: false}
+      - {label: "Salary", name: "salary", widget: "string", required: false}
+      - {label: "Equity", name: "equity", widget: "string", required: false}
+      - {label: "Visa", name: "visa", widget: "boolean", required: false}
+      - {label: "Remote", name: "remote", widget: "boolean", required: false}
+      - {label: "Body", name: "body", widget: "markdown", required: false}
